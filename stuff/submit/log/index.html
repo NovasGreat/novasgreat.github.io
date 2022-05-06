@@ -1,10 +1,66 @@
-<!DOCTYPE html>
-<html>
-<body>
-
-
-<p>what are you doing here! go back!</p>
-
-</body>
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <script id="scriptMain" src="/javascript/main.js"></script>
+    <link id="styleMain" rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="/images/favicon.ico"><link rel="icon" sizes="16x16 32x32 64x64" href="/images/favicon.ico"><link rel="icon" type="image/png" sizes="196x196" href="/images/favicon-192.png"><link rel="icon" type="image/png" sizes="160x160" href="/images/favicon-160.png"><link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96.png"><link rel="icon" type="image/png" sizes="64x64" href="/images/favicon-64.png"><link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png"><link rel="apple-touch-icon" href="/images/favicon-57.png"><link rel="apple-touch-icon" sizes="114x114" href="/images/favicon-114.png"><link rel="apple-touch-icon" sizes="72x72" href="/images/favicon-72.png"><link rel="apple-touch-icon" sizes="144x144" href="/images/favicon-144.png"><link rel="apple-touch-icon" sizes="60x60" href="/images/favicon-60.png"><link rel="apple-touch-icon" sizes="120x120" href="/images/favicon-120.png"><link rel="apple-touch-icon" sizes="76x76" href="/images/favicon-76.png"><link rel="apple-touch-icon" sizes="152x152" href="/images/favicon-152.png"><link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-180.png"><meta name="msapplication-TileColor" content="#FFFFFF"><meta name="msapplication-TileImage" content="/images/favicon-144.png"><meta name="msapplication-config" content="/browserconfig.xml">
+  </head>
+  <body>
+    <noscript id="noscript"><h1>Javascript has been disabled.</h1><br><p>This page requires javascript in order to load properly. Please enable it via chrome settings.</p></noscript>
+    <iframe id="header" scrolling="no" height="100" width="100%" src="/other/header.html" frameborder="0"></iframe>
+    <iframe id="sidebar" frameborder="0" style="float: left;margin-top: 350;top: 350;margin-left: -10px;" scrolling="no" width="170" src="/other/sidebar.html" onload='resizeIframe(this)'></iframe>
+    <div id="main" class="main">
+      <div id="main_text" class="main_text">
+        <h3 id="title">Requests Log</h3>
+        <br>
+        <p>Submit progress of people that have sbmitted for a game! (jokes will not be taken. [maybeee....]) To submit your own request, go <a href="/stuff/submit/problem">here</a>.</p>
+        <p>There are currently a small amount of requests, so these will be added pretty soon.</p>
+        <br>
+        <h3>Failure code meanings:</h3>
+        <p>01: Unsupported by flash emulator. This means that the emulator (Ruffle) currently does not have the capability to run the game that has been submitted.</p>
+        <p>02: (for html5 games) I was unable to find an unblocked website that hosts that game, meaning I could still add it, but it would be blocked at most or all schools.</p>
+        <p>03: Unable to find game. This means I wasn't able to find that game anywhere on the internet.</p>
+        <p>04: This is not a web game. (For example Minecraft) and there is no possible way to add it to any website.</p>
+        <p>05: This is on another unblocked website. Try to find it on Scratch!</p>
+        <br>
+        <table style="width:100%; text-align:center">
+            <tr>
+                <th><p><strong>Date (DD/MM/YY)</strong></p></th>
+                <th><p><strong>Content</strong></p></th>
+                <th><p><strong>Status</strong></p></th>
+                <th><p><strong>Person</strong></p></th>
+            </tr>
+            <tr>
+                <td><p>5/6/22</p></td>
+                <td><p>Fnf Mods</p></td>
+                <td><p>Pending</p></td>
+                <td><p>Unknown Person</p></td>
+            </tr>
+            <tr>
+                <td><p>5/6/22</p></td>
+                <td><p>Candy Clicker</p></td>
+                <td><p>Faliure Code: 05</p></td>
+                <td><p>Adan Silva</p></td>
+            </tr>
+            <tr>
+                <td><p>5/6/22</p></td>
+                <td><p>Bad End Theater</p></td>
+                <td><p>Faliure Code: 04</p></td>
+                <td><p>Araiya Jeffers</p></td> 
+            </tr>
+        </table>
+        <br>
+      </div>
+    </div>
+    <script id="scriptBody" src="/javascript/bodyScript.js"></script>
+  </body>
 </html>
+<div id="bottomElement"></div>
 
+<!--
+            <tr>
+                <td><p></p></td>
+                <td><p></p></td>
+                <td><p></p></td>
+            </tr>
+-->
